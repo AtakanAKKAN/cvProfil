@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+
+.left-bar{
+    height: 100vh;
+    width: 20%;
+    padding: 20px;
+    background-color: coral;
+    border-right: 2px solid black;
+}
+
+.contain{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+.list-item{
+    padding: 8px;
+    margin: 10px;
+}
+
+.list-item .item{
+    font-size: 2.2vw;
+    color: whitesmoke;
+    transition: .4s;
+    display: inline-block;
+}
+
+.list-item .item:hover{
+    transform: translateX(15%);
+    color: aqua;
+    opacity: 1;
+}
+
+.item:not(:hover){
+    opacity: 0.7;
+}
+
+.right-bar{
+    width: 80%;
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+
+.sections{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-class{
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-class img{
+    width: 300px;
+}
+
+.contant-class{
+    width: 100%;
+    background-color:darkorchid;
+    display: flex;
+    flex-direction: column;
+}
+
+.contant-class h2{
+    text-align: center;
+}
+
+.skill-section{
+    width: 100%;
+    background-color: aliceblue;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    width: calc(33% - 20px);
+    height: 300px;
+    margin: 10px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+.container h3{
+    font-size: 2.5vw;
+    padding: 10px 20px 20px 20px;
+}
+
+.container p{
+    font-size: 1.5vw;
+}
+
+
+.more-class{
+    width: 100%;
+    background-color:firebrick;
+}
+
+.sections h2{
+    padding: 20px;
+    font-size: 3.5vw;
+}
+
+.sections p{
+    padding: 0px 20px;
+}
+
+.control{
+    display: none;
+}
