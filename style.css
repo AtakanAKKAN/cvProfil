@@ -19,6 +19,8 @@ section{
     padding: 20px;
     background-color: coral;
     border-right: 2px solid black;
+    position: fixed;
+    display: block;
 }
 
 .contain{
@@ -27,8 +29,18 @@ section{
     width: 100%;
     height: 100%;
     background-color: cadetblue;
+    
 }
 
+.list-item i{
+    display: none;
+    font-size: 2.2vw;
+    color: whitesmoke;
+    transition: .4s;
+}
+
+
+.list-item i,
 .list-item{
     padding: 8px;
     margin: 10px;
@@ -41,12 +53,14 @@ section{
     display: inline-block;
 }
 
+.list-item i:hover,
 .list-item .item:hover{
     transform: translateX(15%);
     color: aqua;
     opacity: 1;
 }
 
+.list-item i,
 .item:not(:hover){
     opacity: 0.7;
 }
@@ -55,6 +69,8 @@ section{
     width: 80%;
     background-color: aquamarine;
     min-height: 100vh;
+    position: absolute;
+    right: 0;
 }
 
 .sections{
@@ -80,8 +96,14 @@ section{
     justify-content: center;
 }
 
+.about-class .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-class img{
-    width: 300px;
+    width: 25vw;
 }
 
 .contant-class{
@@ -125,6 +147,94 @@ section{
 .more-class{
     width: 100%;
     background-color:firebrick;
+    height: 150vh;
+}
+
+.contact-class{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+}
+
+.contact-class .boxes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-class .box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: calc(25% - 10px);
+    margin: 10px auto 0 auto;
+    background-color: whitesmoke;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-class h3{
+    font-size: 2vw;
+    padding-bottom: 8px;
+    padding-top: 20px;
+}
+
+.contact-class p{
+    font-size: 1.5vw;
+    margin-bottom: 6px;
+}
+
+.contact-class i{
+    font-size: 4vw;
+    color: #6EACB6;
+}
+
+.contact-class .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6EACB6;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 35px;
+}
+
+.form .form-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .form-list .i-text{
+    height: 15px;
+    width: 250px;
+    padding: 16px 8px;
+    margin: 10px;
+}
+
+.form .form-list .i-text-area{
+    height: 100px;
+    width: 250px;
+    padding: 14px 7px;
+    margin: 10px;
+}
+
+.form .form-list .i-submit{
+    margin: 15px;
+    font-size: 2vw;
+    background-color: transparent;
+    border: 1px solid;
+    text-align: center;
+    color: aqua;
+    border-color: white;
+    padding: 8px 16px;
 }
 
 .sections h2{
@@ -133,7 +243,7 @@ section{
 }
 
 .sections p{
-    padding: 0px 20px;
+   padding: 0px 20px;
 }
 
 .control{

@@ -48,6 +48,7 @@ $("#about").click(function(evt){
     $(".about-class").show(200,function(){
         $(".contant-class").hide(100)
         $(".more-class").hide(100)
+        $(".contact-class").hide(100)
     })
 })
 
@@ -57,6 +58,7 @@ $("#contant").click(function(evt){
     $(".contant-class").show(200,function(){
         $(".about-class").hide(100)
         $(".more-class").hide(100)
+        $(".contact-class").hide(100)
     })
 })
 
@@ -66,6 +68,17 @@ $("#more").click(function(evt){
     $(".more-class").show(200,function(){
         $(".contant-class").hide(100)
         $(".about-class").hide(100)
+        $(".contact-class").hide(100)
+    })
+})
+
+$("#contact").click(function(evt){
+    evt.preventDefault();
+
+    $(".contact-class").show(200,function(){
+        $(".contant-class").hide(100)
+        $(".about-class").hide(100)
+        $(".more-class").hide(100)
     })
 })
 
